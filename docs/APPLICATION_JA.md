@@ -6,7 +6,7 @@ cat88666
 
 ## ポートフォリオ URL
 
-公開後に GitHub URL を記入します。
+https://github.com/cat88666/comfyui-wan22-runpod-portfolio
 
 ## 作業環境
 
@@ -27,4 +27,3 @@ ComfyUIワークフローのJSONだけでなく、RunPod上で再現できるJup
 ## 納期の目安
 
 1週間以内
-
