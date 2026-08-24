@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Wan2.2 TI2V 5B workflow map</title>
+  <desc id="desc">Model loading flows through user prompts and optional image input, then sampling and video output.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .box { rx: 16; filter: url(#shadow); stroke-width: 2; }
+      .heading { font: 700 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #fff; }
+      .body { font: 500 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #f8fafc; }
+      .arrow { stroke: #64748b; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .legend { font: 600 14px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1200" height="460" fill="#f8fafc"/>
+  <text x="48" y="48" style="font: 800 28px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill:#0f172a">Wan2.2 TI2V 5B · Reproducible ComfyUI pipeline</text>
+  <text x="48" y="76" style="font: 500 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill:#64748b">Native nodes · pinned ComfyUI commit · T2V and optional I2V · RunPod notebooks</text>
+
+  <rect class="box" x="48" y="125" width="210" height="175" fill="#7e57c2" stroke="#5e35b1"/>
+  <text class="heading" x="72" y="162">1 · Models</text>
+  <text class="body" x="72" y="198">Wan2.2 TI2V 5B</text>
+  <text class="body" x="72" y="226">UMT5 text encoder</text>
+  <text class="body" x="72" y="254">Wan2.2 VAE</text>
+
+  <rect class="box" x="315" y="105" width="230" height="105" fill="#43a047" stroke="#2e7d32"/>
+  <text class="heading" x="339" y="143">2 · Prompts</text>
+  <text class="body" x="339" y="177">Positive + negative</text>
+  <rect class="box" x="315" y="230" width="230" height="105" fill="#43a047" stroke="#2e7d32"/>
+  <text class="heading" x="339" y="268">Optional image</text>
+  <text class="body" x="339" y="302">Ctrl+B enables I2V</text>
+
+  <rect class="box" x="602" y="125" width="210" height="175" fill="#43a047" stroke="#2e7d32"/>
+  <text class="heading" x="626" y="162">3 · Video setup</text>
+  <text class="body" x="626" y="198">640 × 352</text>
+  <text class="body" x="626" y="226">49 frames</text>
+  <text class="body" x="626" y="254">24 fps</text>
+
+  <rect class="box" x="869" y="125" width="135" height="175" fill="#3f789e" stroke="#285b7a"/>
+  <text class="heading" x="893" y="162">4 · Sample</text>
+  <text class="body" x="893" y="198">KSampler</text>
+  <text class="body" x="893" y="226">20 steps</text>
+  <text class="body" x="893" y="254">CFG 5</text>
+
+  <rect class="box" x="1060" y="125" width="100" height="175" fill="#3f789e" stroke="#285b7a"/>
+  <text class="heading" x="1078" y="162">5 · MP4</text>
+  <text class="body" x="1078" y="198">Decode</text>
+  <text class="body" x="1078" y="226">Create</text>
+  <text class="body" x="1078" y="254">Save</text>
+
+  <path class="arrow" d="M258 212 H305"/>
+  <path class="arrow" d="M545 158 H575 Q592 158 592 175 V198 H602"/>
+  <path class="arrow" d="M545 282 H575 Q592 282 592 265 V240 H602"/>
+  <path class="arrow" d="M812 212 H859"/>
+  <path class="arrow" d="M1004 212 H1050"/>
+
+  <circle cx="58" cy="390" r="8" fill="#43a047"/><text class="legend" x="75" y="395">User input</text>
+  <circle cx="190" cy="390" r="8" fill="#7e57c2"/><text class="legend" x="207" y="395">Model loading</text>
+  <circle cx="355" cy="390" r="8" fill="#3f789e"/><text class="legend" x="372" y="395">Automated processing</text>
+  <text x="1160" y="430" text-anchor="end" style="font: 500 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill:#94a3b8">cat88666 · portfolio architecture overview</text>
+</svg>
+

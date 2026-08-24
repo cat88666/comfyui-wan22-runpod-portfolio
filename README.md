@@ -1,6 +1,10 @@
 # Wan2.2 TI2V 5B — ComfyUI / RunPod reproducible workflow
 
+[![Validate portfolio](https://github.com/cat88666/comfyui-wan22-runpod-portfolio/actions/workflows/validate.yml/badge.svg)](https://github.com/cat88666/comfyui-wan22-runpod-portfolio/actions/workflows/validate.yml)
+
 ComfyUI ビルダー応募用に整理した、Wan2.2-TI2V-5B の動画生成ワークフローです。テキストから動画（T2V）と、任意の入力画像から動画（I2V）の両方に対応します。
+
+![Workflow architecture overview](docs/workflow-map.svg)
 
 ## 特徴
 
@@ -59,4 +63,3 @@ JSON/Notebook の構造および秘密情報の混入はローカルで静的検
 - Template commit: `23de45678592886158d1d97194e26d4dc59bb5b3`
 
 元テンプレートに関する著作権・ライセンスは `THIRD_PARTY_NOTICES.md` を参照してください。本リポジトリで追加した文書と Notebook は MIT License です。
-
