@@ -1,5 +1,7 @@
 # Wan2.2 TI2V 5B — ComfyUI / RunPod reproducible workflow
 
+[日本語](README.md) | [English](README.en.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md)
+
 [![Validate portfolio](https://github.com/cat88666/comfyui-wan22-runpod-portfolio/actions/workflows/validate.yml/badge.svg)](https://github.com/cat88666/comfyui-wan22-runpod-portfolio/actions/workflows/validate.yml)
 
 ComfyUI ビルダー応募用に整理した、Wan2.2-TI2V-5B の動画生成ワークフローです。テキストから動画（T2V）と、任意の入力画像から動画（I2V）の両方に対応します。
@@ -22,7 +24,7 @@ ComfyUI ビルダー応募用に整理した、Wan2.2-TI2V-5B の動画生成ワ
 | `workflows/wan2.2_ti2v_5b_portfolio.json` | 整理済み ComfyUI workflow |
 | `notebooks/Rp_run_comfyui_cat88666.ipynb` | ComfyUI 環境構築・起動 |
 | `notebooks/DownLoad_Models.ipynb` | モデル取得 |
-| `docs/TEST_NOTES_JA.md` | 操作手順・検証記録 |
+| [`docs/TEST_NOTES_JA.md`](docs/TEST_NOTES_JA.md) | 操作手順・検証記録 |
 | `docs/APPLICATION_JA.md` | 応募フォーム用の文章案 |
 
 ## 想定環境
@@ -52,7 +54,7 @@ b78cec879b9460d5cb25228a83a942fb78d2cd24
 
 ## 検証状態
 
-JSON/Notebook の構造および秘密情報の混入はローカルで静的検証しています。RunPod 上の生成結果は `docs/TEST_NOTES_JA.md` に実機確認後の GPU・所要時間・出力を追記します。
+JSON/Notebook の構造、コードセルの Python 構文、モデルパス、グループ色、秘密情報の混入をローカルと GitHub Actions で静的検証しています。RunPod 上の生成結果は `docs/TEST_NOTES_JA.md` に実機確認後の GPU・所要時間・出力を追記します。静的検証は GPU 上の生成成功を意味しません。
 
 ## 出典とライセンス
 

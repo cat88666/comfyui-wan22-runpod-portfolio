@@ -1,5 +1,7 @@
 # テストメモ
 
+[日本語](TEST_NOTES_JA.md) | [English](TEST_NOTES_EN.md) | [简体中文](TEST_NOTES_ZH-CN.md) | [한국어](TEST_NOTES_KO.md)
+
 ## ユーザーが触る場所
 
 緑のグループだけを変更します。
@@ -41,4 +43,3 @@
 - 問題と対処: 待ち
 
 実機で確認できるまでは「動作確認済み」と表記しません。
-
